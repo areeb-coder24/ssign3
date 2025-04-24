@@ -3,43 +3,551 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=library_books" />
     <link rel="stylesheet" href="style.css">
-    <title>assigment 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light head">
+        <div class="container-fluid">
+          <div class="header">
+            <img
+              src="images/Screenshot_2025-02-21_120143-removebg-preview.png"
+              class=""
+              alt=""
+            />
+            <button
+              class="navbar-toggler text-white bg-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav headlinks d-flex justify-content-center">
+              <a class="nav-link active fw-bold" aria-current="page" href="#"
+                >Blogs</a
+              >
+              <a class="nav-link fw-bold" href="#">Pricing</a>
+              <a class="nav-link fw-bold" href="#">Testimonial</a>
+              <a class="nav-link fw-bold" href="#">Services</a>
+              <a class="nav-link fw-bold" href="#">Contact Us</a>
+            </div>
+            <div class="nav-btns">
+              <a
+                class="btn-normal"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                >Sign In</a
+              >
+              <a
+                class="btn-purple"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal2"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body Sign-in">
+              <input type="text" placeholder="Enter Your Full Name" id="text" />
+              <input
+                type="email"
+                placeholder="Enter Your Email Address"
+                id="email"
+              />
+              <input
+                type="password"
+                placeholder="Enter Your password"
+                id="pass"
+              />
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+              <button type="button" class="btn-purple" id="SignIn">
+                Sign In
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModal2"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body Sign-in">
+              <input type="text" placeholder="Enter Your Full Name" id="text2" />
+              <input
+                type="email"
+                placeholder="Enter Your Email Address"
+                id="email2"
+              />
+              <input
+                type="password"
+                placeholder="Enter Your password"
+                id="pass2"
+              />
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+              <button
+                type="button"
+                class="btn-purple"
+                data-bs-dismiss="modal"
+                id="SignUp"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid herosection">
+        <h1>
+          Boost Your
+          <span
+            style="
+              color: #8c33ff;
+              display: inline;
+              background-color: #f1f0fc;
+              padding: 3px 8px;
+              border-radius: 5px;
+            "
+          >
+            Productivity</span
+          >
+          with <br />
+          Our Smart SaaS Tools
+        </h1>
+        <p>
+          Ready to experience the future of work? sign up for a free trail and see
+          how our SaaS <br />solution can transform your bussiness. No commitment,
+          just results.
+        </p>
+        <img class="heroimg1" src="images/Screenshot_2025-02-23_201144-removebg-preview.png" alt="Image">
+        <img class="heroimg2" src="images/Screenshot_2025-02-23_201144-removebg-preview.png" alt="Image">
+        <div class="herobtns">
+          <button class="herobtn1">Get Started <i class="fa-solid fa-arrow-right" "></i></button>
+          <button class="herobtn2">Get Demo <i class="fa-brands fa-youtube" "></i></button>
+        </div>
+      </div>
 
-<h1> javascript asss</h1>
-<script>
-    function add() {
-    const num1 = parseInt (prompt(" 1st Number"))
-    const num2 = parseInt (prompt(" 2st Number"))
-    alert(num1 + num2);
-}
-function sub() {
-    const num1 = prompt(" 1st Number")
-    const num2 = prompt(" 2st Number")
-    alert(num1 - num2);
-}
-function prod() {
-    const num1 = prompt(" 1st Number")
-    const num2 = prompt(" 2st Number")
-    alert(num1 * num2);
-}
-function divid() {
-    const num1 = prompt(" 1st Number")
-    const num2 = prompt(" 2st Number")
-    alert(num1 / num2);
-}
-</script>
+      <div class="secsection">
+<h1 class="sec2heading">BASIC SECTION</h1>
+<h1 class="sec3heading">services Include Has <span class="purplean"> Every Plan</span> </h1>
+
+        <div class="dp">
+    
+    <div class="box">
+      <div class="icon1"><i class="fa-solid fa-book fa-2xl" style="color: #B197FC;"></i></div>
+      <span class="boxtxt1">Product Launch</span>
+      <p class="classparas">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, rerum aliquam.</p>
+
+      <div class="button-container">
+        <button class="animated-button">Click Me</button>
+      </div>
+    </div>
+
+
+    <div class="box">
+      <div class="icon1"><i class="fa-solid fa-money-bill-trend-up fa-2xl" style="color: #B197FC;"></i></div>
+      <span class="boxtxt1">Revene launch</span>
+      <p class="classparas">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, rerum aliquam. </p>
+
+      <div class="button-container">
+        <button class="animated-button">Click Me</button>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="icon1"><i class="fa-solid fa-plane-departure fa-2xl" style="color: #B197FC;"></i></i></div>
+      <span class="boxtxt1">Quick Solutions</span>
+      <p class="classparas">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, rerum aliquam. </p>
+
+      <div class="button-container">
+        <button class="animated-button">Click Me</button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+      </div>
+  
+
+
+
+
+
+
+
+
+
+       <div class="divpics1">
+      <div class="container-fluid twosidesection">
+        <div class="col-lg-6 leftsection">
+          <div class="title">
+            <p >Product Launch Tool</p>
+          </div>
+          <div class="lefthead">
+            <h2>Streamline Your Product <br> Launch With Our <span style="color: #8B32FF;">Powerful</span> <br> All-In-One Tool</h2>
+          </div>
+          <div class="leftpara">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit tenetur sapiente unde explicabo labore voluptatibus in animi aperiam iusto magnam.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 rightsection">
+          <img src="https://up.yimg.com/ib/th?id=OIP.JeoqTcgGIzGGYNf8H9rQsAHaE5&pid=Api&rs=1&c=1&qlt=95&w=178&h=118" alt="Image" >
+        </div>
+  
+
+      </div>
+
+
+
+
+      <div class="container-fluid twosidesection">
+ 
+        <div class="col-lg-6 rightsection2">
+          <img src="https://up.yimg.com/ib/th?id=OIP.CpE2h7mpAhIHV5CyY1iuzAHaEz&pid=Api&rs=1&c=1&qlt=95&w=161&h=104" alt="Image" >
+        </div>
+        <div class="col-lg-6 leftsection2">
+          <div class="title2">
+            <p >Revenue Generation</p>
+          </div>
+          <div class="lefthead2">
+            <h2>Accelerate Revenue <br>Generation With Proven <br> <span style="color: #8B32FF;">Strategies</span> And Tools</h2>
+          </div>
+          <div class="leftpara2">
+            <p>Launch our products with ease using or all-in-one tool designed for <br>success. Streamline every step, from planning to execution , and <br> engage your audience effortlessly."</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+<div class="btn">
+
+      <button class="purple-btn">Get STARTED ></button>
+
+
+
+</div>
+
+<div class="paragraph">precing   <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+  <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+</div></div>
+
+<h1 class="af"> AFFORD PLAN TO SCALE YOUR <span class="pur">business</span></h1>
+
+<div class="flex">
+
+<div class="card">
+  <br>
+  <i class="fa-solid fa-sack-dollar fa-2xl" style="color: #B197FC;"></i>
+  <br>
+  <br>
+  <h4>STARTER PLAN</h4>
+  <p>Kickstart Your Journey With Our Easy And
+    Affordable Starter Plan..</p>
+  <br>
+  <h1 class="free">Free</h1>
+  <hr>
+  <h1>Card Title Two</h1>
+  <p>Basic Analytics Dashboard</p>
+  <br>
+  <p>Task & Project Managment</p>
+  <br>
+  <p>Cloud Storage (Up To 5GB)</p>
+  <br>
+  <p>Customizable Reporting Tools</p>
+  <br>
+
+  <p>Customizable Reporting Tools</p>
+
  
 
-
-<a onclick="add()">+</a>
-<a onclick="sub()">-</a>
-<a onclick="prod()">x</a>
-<a onclick="divid()">%</a>
-   
+  <button>Learn More</button>
+</div>
 
 
+  
+
+
+
+<div class="card">
+  <br>
+  <i class="fa-solid fa-crown fa-2xl" style="color: #FFD43B;"></i>
+  <br><br>
+  <h4>STARTER PLAN</h4>
+  <p>Kickstart Your Journey With Our Easy And
+    Affordable Starter Plan..</p>
+  <br>
+  <h1 class="free">Free</h1>
+  <hr>
+  <h1>Card Title Two</h1>
+  <p>Basic Analytics Dashboard</p>
+  <br>
+  <p>Task & Project Managment</p>
+  <br>
+  <p>Cloud Storage (Up To 5GB)</p>
+  <br>
+  <p>Customizable Reporting Tools</p>
+  <br>
+
+  <p>Customizable Reporting Tools</p>
+
+ 
+
+  <button>Learn More</button>
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+  <br>
+  <i class="fa-solid fa-phone-flip fa-2xl" style="color: #74C0FC;"></i>
+  <br><br>
+  <h4>STARTER PLAN</h4>
+  <p>Kickstart Your Journey With Our Easy And
+    Affordable Starter Plan..</p>
+  <br>
+  <h1 class="free">Free</h1>
+  <hr>
+  <h1>Card Title Two</h1>
+  <p>Basic Analytics Dashboard</p>
+  <br>
+  <p>Task & Project Managment</p>
+  <br>
+  <p>Cloud Storage (Up To 5GB)</p>
+  <br>
+  <p>Customizable Reporting Tools</p>
+  <br>
+
+  <p>Customizable Reporting Tools</p>
+
+ 
+
+  <button>Learn More</button>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ddd">
+  <br>
+  <br>
+  <br>
+  <br>
+
+<div class="container-fluid faq-section">
+    
+  <div class="accordian">
+    <div class="question" id="question" onclick="">
+        <h4>juchud du huid</h4>
+     <i class="fa-solid fa-caret-down icon " style="color: white;" ></i>
+
+    </div>
+    <div class="answer " id="answer">
+        <p id="para">rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+
+        </p>
+    </div>
+</div>
+
+
+<div class="accordian">
+    <div class="question" id="question" onclick="">
+        <h4>Lorem ipsum dolor sit, amet consectetur adipisicing.</h4>
+     <i class="fa-solid fa-caret-down icon " style="color: white;" ></i>
+
+    </div>
+    <div class="answer " id="answer">
+        <p id="para">rrrrrrrrrrrrrrrrrrrrrrrrrr rrrrrrrrrrrrrrrrrrrrr
+
+        </p>
+    </div>
+</div>
+
+
+
+
+
+<div class="accordian">
+  <div class="question" id="question" onclick="">
+      <h4>sgedyu ewucyuscyuduguwe g8o c/h4>
+   <i class="fa-solid fa-caret-down icon " style="color: white;" ></i>
+
+  </div>
+  <div class="answer " id="answer">
+      <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quis omnis vero non corrupti ab nesciunt tenetur molestiae.
+
+      </p>
+  </div>
+</div>
+
+
+<div class="accordian">
+  <div class="question" id="question" onclick="">
+      <h4>errrrrrrrrrrrrrrrrrrrgvvr   rrrrrrrrrrrrrrrrrrrrrrr</h4>
+   <i class="fa-solid fa-caret-down icon " style="color: white;" ></i>
+
+</div>
+
+
+</div>
+
+
+
+<div class="purple-box">
+  <h1>Stay Updated!</h1>
+  <p>Enter your email below to subscribe to our newsletter and receive the latest updates.</p>
+  <input type="email" placeholder="Enter your email" />
+</div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Page content -->
+  <main class="content">
+    <h1>Welcome to SAAAs</h1>
+    <p>This is a sample website with a detailed footer section.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- About Section -->
+      <div class="footer-section about">
+       <img src="c:\Users\dell\Desktop\portfolio 55\images\Screenshot_2025-02-21_120143-removebg-preview.png">
+        <p>We are a community-focused platform dedicated to bringing people together through shared interests, events, and meaningful content. Our mission is to create spaces that empower individuals and groups alike.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact / Social -->
+      <div class="footer-section contact">
+        <h2>Connect With Us</h2>
+        <p>Email:SSSAAAASSS.com</p>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy;  All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
